@@ -1,0 +1,53 @@
+.pre-footer{
+  background-color: #ebebeb;
+  min-height: 125px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.44);
+
+  .h3{
+    color : #000;
+    margin-top: 26px;
+    margin-bottom: 19px;
+    text-align: center;
+  }
+
+  input{
+    width: 337px;
+    height: 40px;
+    border: none;
+    font-size: 12px;
+    color: #003972;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 25px;
+    @include placeholder {
+      color: #003972;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 400;
+      padding-left: 25px;
+    }
+  }
+  button{
+    display: inline;
+    border: none;
+    position: relative;
+    left: -4px;
+  }
+
+  form{
+    width: 452px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .form-error,.send-ok{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+}

@@ -1,0 +1,215 @@
+.header-top{
+
+  height: 80px;
+  border-bottom: 1px solid #b1b1b1;
+
+  a{
+    text-decoration: none;
+  }
+
+  .group{
+    position: relative;
+
+  }
+
+  .phone,.contact,.logo-header,.search,.social,.profil{
+    display: inline-block;
+    border-left: 1px solid #b1b1b1;
+    height: 80px;
+    vertical-align: top;
+    line-height: 80px;
+  }
+
+  .phone,.contact{
+    width: 155px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    img{padding-right: 5px;}
+    a{color: #000;}
+    color: #000;
+  }
+
+
+  .logo-header{
+    width: 50%;
+    max-width: 50%;
+    img{
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+      max-width: 231px;
+      max-height: 61px;
+    }
+  }
+
+
+  // SEARCH
+
+  .search{
+
+    height: 80px;
+    line-height: normal;
+    width: 55px;
+    background-color: #b1b1b1;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #B6B6B6;
+    margin-left: 47px;
+    .icon-hover{display: none;}
+    img{
+      display: block;
+      margin: auto;
+      margin-top: 30px;
+      //padding-right: 11px;
+    }
+    &:hover{
+      background-color: #f7f7f7;
+      .search-form{
+        display: block;
+      }
+      .icon-hover{display: block;cursor: pointer;}
+      .icon-default{display: none;}
+    }
+    .search-form{
+      display: none;
+      position: absolute;
+      right: 42px;
+      border-bottom: none;
+      border-left: 1px solid #B6B6B6;
+      input::-ms-clear {display: none;}
+      input{
+        height: 79px;
+        line-height: 80px;
+        background-color: #f7f7f7;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        color: #003972;
+        font-size: 10px;
+        font-style: italic;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-left: 20px;
+        @include placeholder {
+          color: #003972;
+          font-size: 10px;
+          font-style: italic;
+          text-transform: uppercase;
+          font-weight: 300;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  .search-hover-ie{
+    background-color: #f7f7f7!important;
+    .search-form{
+      display: block!important;
+    }
+    .icon-hover{display: block!important;cursor: pointer!important;}
+    .icon-default{display: none!important;}
+  }
+
+
+
+
+
+  .social{
+    border: none;
+    width: 37px;
+    img{
+      display: block;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+
+
+
+
+
+  .profil{
+    background-color: #003972;
+    width: 97px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    left: -4px;
+    .fake-a{
+      color: #FFF;
+      font-weight: 300;
+      text-transform: uppercase;
+      img{padding-right: 5px;}
+      .icon-hover{display: none;}
+    }
+
+    &:hover{
+      background-color: #FFF;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.44);
+
+      .icon-hover{display: inline;}
+      .icon-default{display: none;}
+      .login-form{display: block;}
+      .fake-a{color: #003972;}
+    }
+
+    .login-form{
+      z-index: 666;
+      display: none;
+      //display: block;
+      position: absolute;
+      right: 0px;
+      top: 80px;
+      height: 100px;
+      width: 237px;
+      z-index: 300;
+      background-color: #FFF;
+      a{
+        width: 100%;
+        height: 50px;
+        margin: 0px;
+        display: block;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #000;
+      }
+      .bg-green{
+        background-color: #00a453;
+        color: #FFF;
+      }
+      .bg-red{
+        background-color: rgb(175, 12, 32);
+        color: #FFF;
+      }
+
+      &:after{
+        position: absolute;
+        bottom: -6px;
+        top: -11px;
+        right: 0px;
+        z-index: 9;
+        content: " ";
+        width: 95px;
+        height: 30px;
+        background-color: white;
+      }
+    }
+
+
+  }
+
+  .profil-hover-ie{
+    background-color: #FFF;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.44);
+    .icon-hover{display: inline!important;}
+    .icon-default{display: none!important;}
+    .login-form{display: block!important;}
+    .fake-a{color: #003972!important;}
+  }
+
+
+
+
+
+}
