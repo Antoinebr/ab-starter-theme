@@ -8,11 +8,11 @@
 */
 
 // Register script
-include('includes/scripts.php');
+include('includes//register/scripts.php');
 // Register menu
 include('includes/register/menus.php');
 // Register sidebar
-include('includes/sidebars.php');
+include('includes//register/sidebars.php');
 
 
 
