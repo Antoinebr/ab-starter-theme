@@ -30,6 +30,9 @@ $('#newsletter-form-btn').on('click',function(e){
 
         $this.after("<p class='send-ok'><i class='fa fa-check'></i> Votre inscription a été effectuée ; nous vous en remercions</p>");
 
+        // Evenement GA
+        // ga('send', 'event', 'lead', 'inscription-newsletter');
+        
       }else{
 
         if(data.erreurEmail) $( ".newsletter-form" ).after(data.erreurEmail);

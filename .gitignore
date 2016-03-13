@@ -3,8 +3,6 @@ node_modules/
 
 dploy.yaml
 
-Gruntfile.js
-
 node_modules
 
 .sass-cache

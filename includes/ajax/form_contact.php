@@ -7,10 +7,12 @@ function form_contact() {
 
   $nom = htmlspecialchars($_POST['nom']);
   $prenom = htmlspecialchars($_POST['prenom']);
-  $fonction = htmlspecialchars($_POST['fonction']);
 
-  $telephone = htmlspecialchars($_POST['telephone']);
+
   $email = htmlspecialchars($_POST['email']);
+  //$telephone = htmlspecialchars($_POST['telephone']);
+
+  $sujet = htmlspecialchars($_POST['sujet']);
 
 
   $message = htmlspecialchars($_POST['message']);
@@ -29,13 +31,8 @@ function form_contact() {
     $erreur = true;
   }
 
-  if( $fonction == ""){
-    $t['erreurFonction'] = "<em class='erreur state-error'>Vous devez rentrer le nom de votre Fonction</em>";
-    $erreur = true;
-  }
-
-  if(!preg_match("#^0[1-78]([-. ]?[0-9]{2}){4}$#", $telephone)){
-    $t['erreurTelephone'] = "<em class='erreur state-error'>Votre numéro de téléphone n'est pas valide</em>";
+  if( $sujet == ""){
+    $t['erreurSujet'] = "<em class='erreur state-error'>Vous devez rentrer un sujet</em>";
     $erreur = true;
   }
 
@@ -44,17 +41,31 @@ function form_contact() {
     $erreur = true;
   }
 
-  if( $message == "" || $message == "Votre demande de renseignement... *"){
+  // if(!preg_match("#^0[1-78]([-. ]?[0-9]{2}){4}$#", $telephone)){
+  //   $t['erreurTelephone'] = "<em class='erreur state-error'>Votre numéro de téléphone n'est pas valide</em>";
+  //   $erreur = true;
+  // }
+
+  if( $message == "" ){
     $t['erreurMessage'] = "<em class='erreur state-error'>Vous devez rentrer un message</em>";
     $erreur = true;
   }
 
+
+
   if(!isset($erreur)){
+
     $t['erreur'] = false;
+    $t['successMessage'] = "<p class='sucess'>Inscription réussie</p>";
+    echo json_encode($t);
+    die();
+
   }elseif($erreur == true){
+
     $t['erreur'] = true;
     echo json_encode($t);
     die();
+
   }
 
 

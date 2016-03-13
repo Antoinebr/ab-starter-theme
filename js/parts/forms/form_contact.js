@@ -1,16 +1,15 @@
 // Formulaire Contact
-$( ".contact-form textarea" ).one( "click", function() {
-  $(this).val('');
-});
-
 $('#contact-form-btn').on('click',function(e){
   e.preventDefault();
 
-  var nom = $( ".contact-form input[name*='nom']" ).val();
   var prenom = $( ".contact-form input[name='prenom']" ).val();
-  var fonction = $( ".contact-form input[name='fonction']" ).val();
-  var telephone = $( ".contact-form input[name*='telephone']" ).val();
+  var nom = $( ".contact-form input[name*='nom']" ).val();
   var email = $( ".contact-form input[name*='email']" ).val();
+
+  var sujet = $( ".contact-form input[name='sujet']" ).val();
+
+  //var telephone = $( ".contact-form input[name*='telephone']" ).val();
+
   var message = $( ".contact-form textarea[name*='message']" ).val();
 
   //return false;
@@ -26,8 +25,8 @@ $('#contact-form-btn').on('click',function(e){
       action: 'form_contact',
       nom: nom,
       prenom: prenom,
-      fonction: fonction,
-      telephone: telephone,
+      sujet: sujet,
+      //telephone: telephone,
       email: email,
       message: message
     },
@@ -38,11 +37,17 @@ $('#contact-form-btn').on('click',function(e){
 
       if(!data.erreur){
 
+        // On vide les inputs
         $('.contact-form input, textarea').each(function(){
           $(this).val('');
         });
 
-        $this.after("<p class='send-ok'>Nous vous remercions de votre message qui a bien été envoyé</p>");
+        // Message de succès
+        $( ".contact-form").after(data.successMessage);
+
+        // Evenement GA
+        //ga('send', 'event', 'lead', 'contact');
+
 
       }else{
 
@@ -52,9 +57,9 @@ $('#contact-form-btn').on('click',function(e){
 
         if(data.erreurPrenom) $( ".contact-form input[name='prenom']" ).after(data.erreurPrenom);
 
-        if(data.erreurTelephone) $( ".contact-form input[name*='telephone']" ).after(data.erreurTelephone);
+        //if(data.erreurTelephone) $( ".contact-form input[name*='telephone']" ).after(data.erreurTelephone);
 
-        if(data.erreurFonction) $( ".contact-form input[name='fonction']" ).after(data.erreurFonction);
+        if(data.erreurSujet) $( ".contact-form input[name='sujet']" ).after(data.erreurSujet);
 
 
         if(data.erreurMessage) $( ".contact-form textarea[name*='message']" ).after(data.erreurMessage);

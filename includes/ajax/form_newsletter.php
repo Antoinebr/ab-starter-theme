@@ -29,6 +29,9 @@ function form_newsletter() {
 
   if(!isset($erreur)){
     $t['erreur'] = false;
+    $t['successMessage'] = "<p class='sucess alert-success' >Inscription réussie</p>";
+    echo json_encode($t);
+    die();
   }elseif($erreur == true){
     $t['erreur'] = true;
     echo json_encode($t);
