@@ -42,7 +42,7 @@ function form_newsletter() {
   if($t['erreur'] == false){
 
     // Inject in MC
-    include(dirname(dirname(__FILE__)).'/mailchimp.class.php');
+    include(dirname(dirname(__FILE__)).'/utils/mailchimp/mailchimp.class.php');
     $mailchimp = new MailChimp("57bc6c0badcb979dc627fef312");
     $result = $mailchimp->call('lists/subscribe', array(
       'id'                => 'ca418sf8', // id de la liste

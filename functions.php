@@ -8,12 +8,13 @@
 */
 
 // Register script
-include('includes//register/scripts.php');
+include('includes/register/scripts.php');
 // Register menu
 include('includes/register/menus.php');
 // Register sidebar
-include('includes//register/sidebars.php');
-
+include('includes/register/sidebars.php');
+// Register acf admin page
+include('includes/register/acf_admin_page.php');
 
 
 /*
@@ -23,10 +24,11 @@ include('includes//register/sidebars.php');
 */
 
 // Class
-include('includes/helper.class.php');
+include('includes/utils/helper.class.php');
 // Extend search
-include('includes/extend-search.php');
-
+include('includes/utils/extend-search.php');
+// Extend search
+//include('includes/utils/jetpack/jp_deregister_scripts.php');
 
 
 /*
@@ -34,7 +36,7 @@ include('includes/extend-search.php');
 * Custom PostTypes
 *
 */
-//include('includes/cpt_custom.php');
+//include('includes/cpt/cpt_custom.php');
 
 
 
@@ -44,7 +46,7 @@ include('includes/extend-search.php');
 *
 */
 // Taxos
-//include('includes/taxo_theme.php');
+//include('includes/taxo/taxo_theme.php');
 
 
 
@@ -76,17 +78,16 @@ include('includes/widgets/widget_about.php');
 */
 
 // Customizer et champs perso Customs
-include('includes/customizer.php');
+include('includes/custom-admin/customizer.php');
 // removes admin menus
-include('ab-includes/remove_admin_menus.php');
+include('includes/custom-admin/remove_admin_menus.php');
 // removes admin widgets
-include('ab-includes/remove_admin_widgets.php');
+include('includes/custom-admin/remove_admin_widgets.php');
 // Tinymce edit
-include('includes/tinymce.php');
+include('includes/custom-admin/tinymce.php');
 // Hide WYSWYG
-//include('includes/hide_editor.php');
-// Menu Admin Options
-include('includes/admin_page.php');
+//include('includes/custom-admin/hide_editor.php');
+
 
 
 
@@ -97,4 +98,5 @@ include('includes/admin_page.php');
 */
 
 // Shortcode
-include('includes/shortcodes.php');
+include('includes/shortcode/sc_chapeau.php');
+include('includes/shortcode/sc_h2.php');
