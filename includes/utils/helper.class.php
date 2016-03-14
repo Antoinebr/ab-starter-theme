@@ -187,6 +187,7 @@ class Helpers
     $excerpt = get_the_content();
     if (strlen($excerpt) > $longueur) {
       $excerpt = strip_tags($excerpt);
+      $excerpt = strip_shortcodes($excerpt);
       $excerpt = str_replace("&nbsp;", "", $excerpt);
       $excerpt_short = mb_substr($excerpt,0,$longueur,'UTF-8').'...';
       echo $excerpt_short;

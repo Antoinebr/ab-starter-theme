@@ -15,6 +15,8 @@ include('includes/register/menus.php');
 include('includes/register/sidebars.php');
 // Register acf admin page
 include('includes/register/acf_admin_page.php');
+// Register thumbnail
+include('includes/register/thumbnails.php');
 
 
 /*
