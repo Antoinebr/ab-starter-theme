@@ -102,3 +102,4 @@ include('includes/custom-admin/tinymce.php');
 // Shortcode
 include('includes/shortcode/sc_chapeau.php');
 include('includes/shortcode/sc_h2.php');
+include('includes/shortcode/sc_youtube.php');

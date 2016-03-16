@@ -83,6 +83,21 @@ module.exports = function(grunt){
 
     /**
     *
+    * Supprime les commentaires
+    *
+    */
+    comments: {
+      js: {
+        options: {
+          singleline: true,
+          multiline: true
+        },
+        src: [ 'app.min.js']
+      },
+    },
+
+    /**
+    *
     * Ecoute les modifications dans les fichiers renseigné dans l'array files
     *
     */
@@ -102,6 +117,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-stripcomments');
   //grunt.registerTask('default', ['concat']);
   grunt.registerTask('default', ['watch']);
   // créer une tache à executer, ici on execute Concat puis Uglify
