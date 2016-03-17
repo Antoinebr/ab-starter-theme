@@ -44,7 +44,6 @@ module.exports = function(grunt){
 
 
           // forms
-          'js/parts/forms/form_newsletter.js',
           'js/parts/forms/form_contact.js',
 
 

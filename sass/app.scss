@@ -12,7 +12,7 @@ $red : #b90100;
 @import "libs/bootstrap";
 //@import "libs/animate";
 @import "libs/wysiwyg-wp";
-@import "libs/magnific-popup";
+//@import "libs/magnific-popup";
 @import "libs/breadcrumbs";
 
 @import "libs/cookie_bar";
@@ -27,59 +27,10 @@ $red : #b90100;
 @import "header/header-top";
 @import "header/nav";
 
-@import "home/slider";
-
-@import "home/body";
-@import "home/calendar";
-@import "home/linkblock-news";
 
 @import "footer/pre-footer";
 @import "footer/footer-links";
 
-@import "form";
-
-// Formations
-@import "formations/single";
-@import "formations/inter";
-@import "formations/archive";
-@import "formations/intra";
-
-// Sessions
-@import "sessions/single";
-@import "sessions/form";
-@import "sessions/search-sessions";
-
-// dpc
-@import "dpc/dpc";
-@import "dpc/etapes";
-
-// actu
-@import "actu/home";
-
-// infos pratiques
-@import "infos-pratiques/infos-pratiques";
-
-@import "seminaire/seminaire";
-@import "qui-sommes-nous/qui-sommes-nous";
-@import "contact/contact";
-
-//popin
-@import "home/popin";
-
-// login
-@import "login-page/login";
-@import "espace-membre/mes-documents";
-@import "espace-membre/password";
-
-@import "nav";
-@import "home";
-@import "page";
-@import "footer";
-
-@import "projets";
-@import "search";
-@import "responsive";
-@import "mobile";
 
 //Cross Browser
 @import "crossbrowsers/firefox";

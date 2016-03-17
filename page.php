@@ -1,19 +1,22 @@
-get_header(); ?>
+<?php get_header(); ?>
 
-<div class="row">
-  <div class="col-sm-12">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
 
-    <?php while ( have_posts() ) : the_post(); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
 
-      <h1><?php the_title();?></h1>
+        <h1><?php the_title();?></h1>
 
-      <p><?php the_content();?></p>
+        <p><?php the_content();?></p>
 
 
-    <?php endwhile; ?>
+      <?php endwhile; ?>
 
-  </div>
-</div> <!-- row -->
+    </div>
+  </div> <!-- row -->
+</div>
+
 
 
 <?php get_footer(); ?>

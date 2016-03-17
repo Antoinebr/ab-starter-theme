@@ -28,7 +28,7 @@ include('includes/register/thumbnails.php');
 // Class
 include('includes/utils/helper.class.php');
 // Extend search
-include('includes/utils/extend-search.php');
+//include('includes/utils/extend-search.php');
 // Extend search
 //include('includes/utils/jetpack/jp_deregister_scripts.php');
 
@@ -59,7 +59,6 @@ include('includes/utils/extend-search.php');
 */
 
 // Ajax form
-include('includes/ajax/form_newsletter.php');
 include('includes/ajax/form_contact.php');
 
 
