@@ -1,13 +1,7 @@
 <?php get_header();?>
 
+<h1><?php single_tag_title(); ?></h1>
 
-
-<h1>
-  <?php $cats = Helpers::getCategoryAsArray('name');
-  if(!empty($cats)): $i = 0; foreach ($cats as $cat ): ?>
-  <?= ($i !== 0) ? ", ".$cat : $cat;?>
-  <?php $i++; endforeach; endif;?>
-</h1>
 <span>Nos derniers articles</span>
 
 

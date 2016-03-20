@@ -19,9 +19,15 @@
     </div> <!-- col-sm-12 -->
   </div> <!-- row -->
 
-  
+
 
 </div> <!-- container -->
 
 
 <?php get_footer(); ?>
+
+
+
+<?php
+
+?>

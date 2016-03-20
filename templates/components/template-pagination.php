@@ -1,4 +1,4 @@
-<?php if($url = get_previous_posts_page_link()): ?>
+<?php if($url = get_previous_posts_page_link() && is_paged()): ?>
   <li class="previous"><a href="<?=$url;?>">&larr; Précédent</a></li>
 <?php endif; ?>
 
