@@ -38,7 +38,8 @@ $('.lightbox').magnificPopup({
 */
 $('img[data-orig-file^="http').each(function(){
   var src = $(this).attr('src');
-  $(this).parent().attr('href',src).addClass('ab-gallery');
+  var srcHigh = src.split('?resize='); // On récupère seulemet la full res
+  $(this).parent().attr('href',srcHigh[0]).addClass('ab-gallery');
 });
 
 $('.ab-gallery').magnificPopup({
