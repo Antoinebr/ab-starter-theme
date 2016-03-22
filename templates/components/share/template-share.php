@@ -6,7 +6,7 @@
 */
 ?>
 
-<div class="clearfix">
+<div class="clearfix"> 
   <?php $url = get_permalink(); ?>
   <div class="social-single-center">
 
@@ -20,6 +20,10 @@
     $url_twitter = 'http://twitter.com/share?url='.$url.'&text='.$text.'&hashtags='.$hashtag.''; ?>
     <a href="#"  onClick="MyWindow=window.open('<?= $url_twitter;?>','Partagez','width=540,height=300'); return false;" >
       Twitter
+    </a>
+
+    <a href="#" onClick="MyWindow=window.open('http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink();?>&title=<?php the_title();?>','Partagez','width=540,height=300'); return false;">
+      Linkedin
     </a>
 
     <a href="#"  onClick="MyWindow=window.open('https://plus.google.com/share?url=<?php the_permalink();?>','Partagez','width=540,height=300'); return false;">
