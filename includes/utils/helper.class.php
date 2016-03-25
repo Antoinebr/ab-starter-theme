@@ -197,4 +197,35 @@ class Helpers
     }
   }
 
+
+  /**
+  *
+  * Retourne  une partie du title
+  *
+  */
+  public static function customTitle($longueur){
+    $excerpt = get_the_title();
+    if (strlen($excerpt) > $longueur) {
+      $excerpt = strip_tags($excerpt);
+      $excerpt = strip_shortcodes($excerpt);
+      $excerpt = str_replace("&nbsp;", "", $excerpt);
+      $excerpt_short = mb_substr($excerpt,0,$longueur,'UTF-8').'...';
+      echo $excerpt_short;
+    }else{
+      echo get_the_title();
+    }
+  }
+
+
+
+  /**
+  *
+  * Retourne TRUE si il y'a plus que une 1 page dans la loop
+  *
+  */
+  public static function others_page_exists(){
+      global $wp_query;
+      return ($wp_query->max_num_pages > 1);
+  }
+
 }

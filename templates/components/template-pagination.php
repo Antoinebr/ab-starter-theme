@@ -2,6 +2,6 @@
   <li class="previous"><a href="<?=$url;?>">&larr; Précédent</a></li>
 <?php endif; ?>
 
-<?php  global $wp_query; if($url = get_next_posts_page_link() && $wp_query->max_num_pages > 1 ): ?>
+<?php $url = get_next_posts_page_link(); if($url !== "" && Helpers::others_page_exists()): ?>
   <li class="next"><a href="<?=$url;?>">Suivant &rarr;</a></li>
 <?php endif; ?>
