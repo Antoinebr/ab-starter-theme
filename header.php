@@ -11,12 +11,28 @@
   <meta name="theme-color" content="#003972">
   <link rel="shortcut icon" href="<?php bloginfo('template_url');?>/img/favicon-32x32.png">
   <link href="<?php bloginfo('template_url');?>/css/app.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php wp_head();?>
 </head>
+
+<img class="responsive-icon" id="responsive-icon" src="<?php bloginfo('template_url');?>/img/icons/menu/icon-hamburger.svg">
+<img class="responsive-icon hidden" id="responsive-icon-close" src="<?php bloginfo('template_url');?>/img/icons/menu/icon-hamburger-close.svg">
+
+<div class="slide-menu menu--sticky">
+  <div class="container">
+    <a href="<?php bloginfo('url');?>">
+      <img class="menu-logo img-responsive" style="height:35px;" src="<?php bloginfo('template_url');?>/img/svg/logo.svg">
+    </a>
+    <nav>
+      <a href="#">Menu item</a>
+      <a href="#">Menu item</a>
+      <a href="#">Menu item</a>
+      <a href="#">Menu item</a>
+    </nav>
+  </div>
+</div>
 
 <script type='text/javascript'>
 /* <![CDATA[ */

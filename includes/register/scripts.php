@@ -11,5 +11,3 @@ function my_scripts_method() {
   wp_localize_script('app', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-
-?>

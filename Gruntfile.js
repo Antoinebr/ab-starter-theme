@@ -43,8 +43,17 @@ module.exports = function(grunt){
           'js/parts/misc.js',
 
 
-          // forms
-          'js/parts/forms/form_contact.js',
+          /**
+          *
+          *   COMPONENTS
+          *
+          */
+
+          // Forms
+          'js/parts/components/forms/form_contact.js',
+
+          // Menu
+          'js/parts/components/menu.js',
 
 
           // Plugins
@@ -66,17 +75,16 @@ module.exports = function(grunt){
     *
     */
     autoprefixer: {
-      options: {
-        browsers: ['last 2 versions', 'ie 8', 'ie 9']
-      },
       your_target: {
-        // Target-specific file lists and/or options go here.
+        options: {
+          browsers: ['last 2 versions'], // 'ie 8', 'ie 9'
+          diff: 'css/file.css.patch'
+        },
       },
       main: {
-        expand: true,
-        flatten: true,
+        expand: true, 
         src: 'css/app.css',
-        dest: 'css/'
+        dest: ''
       },
     },
 
