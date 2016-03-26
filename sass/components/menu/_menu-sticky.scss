@@ -1,0 +1,53 @@
+/**
+*
+* Modifier sticky
+*
+*/
+
+
+.menu--sticky{
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #FFF;
+}
+
+body{
+  padding-top: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+
+
+
+  .responsive-icon{
+    position: fixed;
+  }
+
+  .menu-logo{
+    position: fixed;
+  }
+
+
+  body{
+    padding-top: 50px;
+  }
+
+  .slide-menu{
+    nav{
+      position: fixed;
+    }
+  }
+
+  .responsive-menu-show{
+    display: block;
+  }
+
+
+
+} // 768
