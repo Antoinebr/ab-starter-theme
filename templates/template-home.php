@@ -3,35 +3,42 @@
 ?>
 
 <?php get_header(); ?>
-
-<div class="container">
-
-  <div class="row">
-    <div class="col-md-9">
-
-      <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
-
-        <h1><?php the_title(); ?></h1>
-        <?php the_content(); ?>
-
-      <?php endwhile; endif; ?>
+<body>
 
 
-      <?php get_template_part('templates/components/archive/template','mini-archive'); ?>
+  <section class="banner-full-screen clearfix" style="background-image:url('http://lorempicsum.com/futurama/1900/900/4')">
+    <h1> Hello world</h1>
+  </section>
 
 
-    </div> <!-- col-md-9 -->
+  <div class="container u-mtm">
 
-    <aside class="col-md-3">
+    <div class="row">
+      <div class="col-md-9">
 
-      <?php get_template_part('templates/components/template','sidebar'); ?>
+        <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
-    </aside> <!-- col-md-3 -->
+          <h1><?php the_title(); ?></h1>
+          <?php the_content(); ?>
 
-  </div> <!-- row -->
+        <?php endwhile; endif; ?>
 
 
-</div> <!-- container -->
+        <?php get_template_part('templates/components/archive/template','mini-archive'); ?>
 
+
+      </div> <!-- col-md-9 -->
+
+      <aside class="col-md-3">
+
+        <?php get_template_part('templates/components/template','sidebar'); ?>
+
+      </aside> <!-- col-md-3 -->
+
+    </div> <!-- row -->
+
+
+  </div> <!-- container -->
+</body>
 
 <?php get_footer(); ?>

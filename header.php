@@ -20,19 +20,24 @@
 <img class="responsive-icon" id="responsive-icon" src="<?php bloginfo('template_url');?>/img/icons/menu/icon-hamburger.svg">
 <img class="responsive-icon hidden" id="responsive-icon-close" src="<?php bloginfo('template_url');?>/img/icons/menu/icon-hamburger-close.svg">
 
-<div class="slide-menu menu--sticky">
+<div class="slide-menu menu--sticky ">
   <div class="container">
     <a href="<?php bloginfo('url');?>">
       <img class="menu-logo img-responsive" style="height:35px;" src="<?php bloginfo('template_url');?>/img/svg/logo.svg">
     </a>
-    <nav>
-      <a href="#">Menu item</a>
-      <a href="#">Menu item</a>
-      <a href="#">Menu item</a>
-      <a href="#">Menu item</a>
-    </nav>
+
+    <?php
+    wp_nav_menu( array(
+      'menu'           => 'Menu Principal', // Do not fall back to first non-empty menu.
+      'theme_location' => 'Menu haut',
+      'container' => "nav",
+      'items_wrap'     => '<ul class="listReset">%3$s</ul>'
+    ) );
+    ?>
+
   </div>
 </div>
+
 
 <script type='text/javascript'>
 /* <![CDATA[ */
@@ -40,3 +45,5 @@ var abTemplateUrl = "<?php bloginfo('template_url'); ?>";
 var blogUrl= "<?php bloginfo('url'); ?>";
 /* ]]> */
 </script>
+
+<body>

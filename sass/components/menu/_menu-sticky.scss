@@ -14,11 +14,6 @@
   background-color: #FFF;
 }
 
-body{
-  padding-top: 50px;
-}
-
-
 
 
 @media only screen and (max-width: 768px){
@@ -27,6 +22,7 @@ body{
 
   .responsive-icon{
     position: fixed;
+    z-index: 4;
   }
 
   .menu-logo{
@@ -34,14 +30,19 @@ body{
   }
 
 
-  body{
-    padding-top: 50px;
-  }
+  // body{
+  //   padding-top: 50px;
+  // }
 
   .slide-menu{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
     nav{
       position: fixed;
     }
+
   }
 
   .responsive-menu-show{

@@ -695,6 +695,12 @@ iframe {
   border-radius: 50%;
 }
 
+/* line 17, ../sass/base/_img.scss */
+.img-center {
+  display: block;
+  margin: auto;
+}
+
 /* line 1, ../sass/libs/_bootstrap.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -2775,6 +2781,11 @@ table th[class*="col-"] {
 }
 
 /* line 6, ../sass/components/menu/_menu.scss */
+.current a {
+  font-weight: bold;
+}
+
+/* line 10, ../sass/components/menu/_menu.scss */
 .slide-menu {
   display: block;
   height: 40px;
@@ -2782,25 +2793,30 @@ table th[class*="col-"] {
   text-align: right;
   padding-right: 30px;
   border: solid 1px #e3e3e3;
-  margin-bottom: 20px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-/* line 16, ../sass/components/menu/_menu.scss */
+/* line 21, ../sass/components/menu/_menu.scss */
 .slide-menu .menu-logo {
   display: inline-block;
   float: left;
 }
-/* line 23, ../sass/components/menu/_menu.scss */
-.slide-menu nav a {
+/* line 28, ../sass/components/menu/_menu.scss */
+.slide-menu nav ul li {
+  display: inline;
   padding-left: 20px;
 }
-/* line 25, ../sass/components/menu/_menu.scss */
-.slide-menu nav a:first-of-type {
+/* line 31, ../sass/components/menu/_menu.scss */
+.slide-menu nav ul li:first-of-type {
   padding-left: 0px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 41, ../sass/components/menu/_menu.scss */
+  /* line 47, ../sass/components/menu/_menu.scss */
   .responsive-icon {
     display: block;
     position: absolute;
@@ -2811,29 +2827,25 @@ table th[class*="col-"] {
     cursor: pointer;
   }
 
-  /* line 52, ../sass/components/menu/_menu.scss */
+  /* line 58, ../sass/components/menu/_menu.scss */
   .menu-logo {
     position: absolute;
     top: 13px;
     left: 50%;
-    margin-left: -41px;
-    height: 49px !important;
+    margin-left: -35px;
+    height: 42px !important;
     z-index: 99;
   }
 
-  /* line 63, ../sass/components/menu/_menu.scss */
-  body {
-    padding-top: 50px;
-  }
-
-  /* line 67, ../sass/components/menu/_menu.scss */
+  /* line 68, ../sass/components/menu/_menu.scss */
   .slide-menu {
-    display: none;
+    height: 58px;
   }
-  /* line 70, ../sass/components/menu/_menu.scss */
+  /* line 72, ../sass/components/menu/_menu.scss */
   .slide-menu nav {
+    display: none;
     position: absolute;
-    top: 0px;
+    top: 58px;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -2843,15 +2855,58 @@ table th[class*="col-"] {
     z-index: 1;
     padding-top: 100px;
   }
-  /* line 81, ../sass/components/menu/_menu.scss */
-  .slide-menu nav a {
+  /* line 85, ../sass/components/menu/_menu.scss */
+  .slide-menu nav ul li {
     margin-bottom: 20px;
     padding: 0;
     display: block;
     text-align: center;
   }
 
-  /* line 92, ../sass/components/menu/_menu.scss */
+  /* line 96, ../sass/components/menu/_menu.scss */
+  .slide-menu .responsive-menu-show {
+    display: block;
+  }
+}
+/**
+*
+* Modifier sticky
+*
+*/
+/* line 8, ../sass/components/menu/_menu-sticky.scss */
+.menu--sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 23, ../sass/components/menu/_menu-sticky.scss */
+  .responsive-icon {
+    position: fixed;
+    z-index: 4;
+  }
+
+  /* line 28, ../sass/components/menu/_menu-sticky.scss */
+  .menu-logo {
+    position: fixed;
+  }
+
+  /* line 37, ../sass/components/menu/_menu-sticky.scss */
+  .slide-menu {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  /* line 42, ../sass/components/menu/_menu-sticky.scss */
+  .slide-menu nav {
+    position: fixed;
+  }
+
+  /* line 48, ../sass/components/menu/_menu-sticky.scss */
   .responsive-menu-show {
     display: block;
   }
@@ -3487,6 +3542,24 @@ input[type="checkbox"] + label {
   text-transform: uppercase;
   text-align: center;
   margin-top: 200px;
+}
+
+/* line 1, ../sass/components/banner/_full-screen.scss */
+.banner-full-screen {
+  position: relative;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+/* line 13, ../sass/components/banner/_full-screen.scss */
+.banner-full-screen h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-top: 50vh;
 }
 
 /** ======================================

@@ -33,3 +33,14 @@ iframe[id^="twitter-widget"] {
   display: block;
   margin: auto;
 }
+
+
+/**
+*
+*  Shortcode YouTube
+*
+*/
+
+iframe[src^="https://www.youtube"]{
+  max-width: 100%;
+}

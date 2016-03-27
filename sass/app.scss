@@ -36,7 +36,7 @@
 
 // Menu
 @import "components/menu/_menu";
-//@import "components/menu/menu-sticky";
+@import "components/menu/menu-sticky";
 
 // Form
 @import "components/form/_form";
@@ -55,6 +55,7 @@
 
 // Banner
 @import "components/banner/promo-banner";
+@import "components/banner/full-screen";
 
 // ===================================================
 // Utils

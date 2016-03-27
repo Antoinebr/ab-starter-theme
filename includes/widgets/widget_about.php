@@ -37,35 +37,19 @@ public function widget( $args, $instance ) {
 
   if ( ! empty( $instance['url'] ) ) {
     $url = $instance['url'];
-    echo  "<img class='aligncenter img-responsive' src='$url' width='120'>";
+    echo  "<img class=' img-responsive img-center' src='$url' width='120'>";
   }
 
   if ( ! empty( $instance['title'] ) ) {
     $title = $instance['title'];
-    echo  "<h4 class='aligncenter text-center mt20'>$title</h4>";
+    echo  "<p class='u-txtCenter u-mts txtM'>$title</p>";
   }
 
 
   if ( ! empty( $instance['desc'] ) ) {
     $desc = $instance['desc'];
-    echo  "<p class='text-center pl20 pr20'>$desc</p>";
+    echo  "<p class='u-textCenter u-mts'>$desc</p>";
   }
-
-  echo '<div class="intro-social-group">
-  <a href="#" class="social-icon si-rounded si-medium si-facebook">
-  <i class="icon-facebook"></i>
-  <i class="icon-facebook"></i>
-  </a>
-  <a href="#" class="social-icon si-rounded si-medium si-twitter">
-  <i class="icon-twitter"></i>
-  <i class="icon-twitter"></i>
-  </a>
-  <a href="#" class="social-icon si-rounded si-medium si-gplus">
-  <i class="icon-gplus"></i>
-  <i class="icon-gplus"></i>
-  </a>
-  </div>';
-
 
 
   echo $args['after_widget'];

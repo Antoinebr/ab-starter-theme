@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="row">
-      <?php for($i = 0; $i < 4; $i++): ?>
+      <?php for($i = 0; $i < 3; $i++): ?>
         <article class="col-md-3 col-sm-6">
           <div class="article-container">
             <div class="img-container">
