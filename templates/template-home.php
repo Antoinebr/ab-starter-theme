@@ -26,6 +26,8 @@
 
         <?php get_template_part('templates/components/archive/template','mini-archive'); ?>
 
+        <?php get_template_part('templates/components/gallery/template','mansonry'); ?>
+
 
       </div> <!-- col-md-9 -->
 

@@ -102,3 +102,14 @@ include('includes/custom-admin/tinymce.php');
 include('includes/shortcode/sc_chapeau.php');
 include('includes/shortcode/sc_h2.php');
 include('includes/shortcode/sc_youtube.php');
+
+
+
+/*
+*
+*  Hooks
+*
+*/
+
+// Shortcode
+include('includes/hooks/abml_newsletter.php');

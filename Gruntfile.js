@@ -58,6 +58,7 @@ module.exports = function(grunt){
 
           // Plugins
           'js/parts/sliders.js',
+          'js/parts/mansonry.js',
 
           // Themes
           'js/parts/header.js',
@@ -82,7 +83,7 @@ module.exports = function(grunt){
         },
       },
       main: {
-        expand: true, 
+        expand: true,
         src: 'css/app.css',
         dest: ''
       },

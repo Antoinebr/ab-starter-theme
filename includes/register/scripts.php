@@ -5,6 +5,7 @@ function my_scripts_method() {
   wp_enqueue_script( 'cookies',get_template_directory_uri() . '/js/libs/cookies.js', array('jquery'), '1.10.0', true );
   wp_enqueue_script( 'magnific-popup',get_template_directory_uri() . '/js/libs/magnific-popup.js', array('jquery'), '1.0.0', true );
   wp_enqueue_script( 'owl',get_template_directory_uri() . '/js/libs/owl.js', array('jquery'), '1.10.0', true );
+  wp_enqueue_script( 'mansonry',get_template_directory_uri() . '/js/libs/mansonry.js', array('jquery'), '3.3.0', true );
   wp_enqueue_script( 'device',get_template_directory_uri() . '/js/libs/device.js', array('jquery'), '0.1.61', true );
   wp_enqueue_script( 'ga',get_template_directory_uri() . '/js/libs/ga.js', array('jquery'), '0.1', true );
   wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.min.js', array('jquery','magnific-popup', 'owl','device','ga','cookies'), '1.10.0', true );
