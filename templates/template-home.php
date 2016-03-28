@@ -6,7 +6,7 @@
 <body>
 
 
-  <section class="banner-full-screen clearfix" style="background-image:url('<?php bloginfo('template_url');?>/img/background/bg-home.jpg')">
+  <section class="banner-full-screen banner-promo--overlay clearfix" style="background-image:url('<?php bloginfo('template_url');?>/img/background/bg-home.jpg')">
     <img class="logo img-center img-responsive" width="400px" src="<?php echo get_theme_mod("ab_logo");?>" />
     <h1>AB Starter Theme</h1>
   </section>
@@ -36,6 +36,8 @@
         <?php get_template_part('templates/components/accordion/template','accordion'); ?>
 
 
+
+  
 
       </div> <!-- col-md-9 -->
 

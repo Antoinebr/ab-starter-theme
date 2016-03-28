@@ -1,14 +1,12 @@
 <?php get_header();?>
 
-
 <div class="container entry-content">
 
   <div class="row">
     <div class="col-sm-12">
 
-      <h1><?php single_tag_title(); ?></h1>
 
-      <span>Nos derniers articles</span>
+      <h1><?php printf( __( 'Résultats de recherche pour: %s', '_abtheme' ),  get_search_query() ); ?></h1>
 
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -28,6 +26,7 @@
         <p><?php Helpers::customContent(340);?></p>
         <a href="<?php the_permalink();?>"class="more-link">Lire la suite</a>
 
+        <hr class="u-mtm u-mbm"/>
 
 
       <?php endwhile; ?>
@@ -40,10 +39,8 @@
     <?php else: endif; ?>
 
 
-
     </div> <!-- col-sm-12 -->
   </div> <!-- row -->
+</div> <!-- container -->
 
-
-
-  <?php get_footer();?>
+<?php get_footer();?>

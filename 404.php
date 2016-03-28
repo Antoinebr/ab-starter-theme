@@ -5,21 +5,15 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
+      <h1 class="u-txtCenter">404</h1>
+      <p class="u-txtCenter"> Page non trouvée...</p>
 
-        <h1><?php the_title(); ?></h1>
-
-
-        <?php the_content(); ?>
-
-
-      <?php endwhile; endif; ?>
+      <p class="u-txtCenter"> Utilisez le formulaire de recherche</p>
+      <?php get_search_form();?>
 
 
     </div> <!-- col-sm-12 -->
   </div> <!-- row -->
-
-
 
 </div> <!-- container -->
 

@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container entry-content">
 
   <div class="row">
 
@@ -149,8 +149,20 @@
     <div class="col-md-12">
 
 
-      <h3>Mansonry</h3>
+      <h2>Mansonry</h2>
       <?php get_template_part('templates/components/gallery/template','mansonry'); ?>
+
+
+      <hr/ class="u-mtm u-mbm">
+
+      <h2>Accordion</h2>
+      <?php get_template_part('templates/components/accordion/template','accordion'); ?>
+
+      <hr/ class="u-mtm u-mbm">
+
+      <h2>Search Form</h2>
+      <?php get_search_form();?>
+
 
     </div> <!-- col-md-12 -->
 
