@@ -78,3 +78,10 @@ var isSafari = false;
 if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
   isSafari = true;
 }
+
+
+$('.u-wjs').each(function(){
+  var elementheight = ($(this).data('wHeight'))/100;
+  var windowHeight = $(window).height();
+  $(this).css('height',(windowHeight*elementHeight)+'px');
+});

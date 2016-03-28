@@ -38,6 +38,9 @@
 @import "components/menu/_menu";
 @import "components/menu/menu-sticky";
 
+// Gallery
+@import "components/gallery/mansonry";
+
 // Form
 @import "components/form/_form";
 @import "components/form/_formInputSelect";
@@ -65,3 +68,10 @@
 // @import "utils/_u-show-hide";
 @import "utils/spacing";
 @import "utils/text";
+
+
+
+// ===================================================
+// Libs
+// ===================================================
+@import "libs/magnific-popup";

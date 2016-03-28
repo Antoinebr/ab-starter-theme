@@ -23,7 +23,7 @@
 <div class="slide-menu menu--sticky ">
   <div class="container">
     <a href="<?php bloginfo('url');?>">
-      <img class="menu-logo img-responsive" style="height:35px;" src="<?php bloginfo('template_url');?>/img/svg/logo.svg">
+      <img class="menu-logo img-responsive" style="height:35px;" src="<?php echo get_theme_mod("ab_logo");?>">
     </a>
 
     <?php

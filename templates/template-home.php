@@ -6,8 +6,9 @@
 <body>
 
 
-  <section class="banner-full-screen clearfix" style="background-image:url('http://lorempicsum.com/futurama/1900/900/4')">
-    <h1> Hello world</h1>
+  <section class="banner-full-screen clearfix" style="background-image:url('<?php bloginfo('template_url');?>/img/background/bg-home.jpg')">
+    <img class="logo img-center img-responsive" width="400px" src="<?php echo get_theme_mod("ab_logo");?>" />
+    <h1>AB Starter Theme</h1>
   </section>
 
 
@@ -23,10 +24,17 @@
 
         <?php endwhile; endif; ?>
 
-
+        <h3>Mini archive</h3>
         <?php get_template_part('templates/components/archive/template','mini-archive'); ?>
 
+        <h3>Mansonry</h3>
         <?php get_template_part('templates/components/gallery/template','mansonry'); ?>
+
+
+
+        <h3>Accordion</h3>
+        <?php get_template_part('templates/components/accordion/template','accordion'); ?>
+
 
 
       </div> <!-- col-md-9 -->
@@ -38,6 +46,8 @@
       </aside> <!-- col-md-3 -->
 
     </div> <!-- row -->
+
+
 
 
   </div> <!-- container -->

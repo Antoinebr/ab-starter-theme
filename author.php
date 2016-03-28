@@ -5,6 +5,12 @@
   <div class="row">
     <div class="col-sm-12">
 
+
+      <h1><?php the_author(); ?></h1>
+      <span>Ses derniers articles...</span>
+
+
+
       <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
         <article>
@@ -13,18 +19,7 @@
             <h1><?php the_title(); ?></h1>
           </a>
 
-          <?php
-          if ( has_post_thumbnail() ) {
-            $attr = array('class'	=> "img-responsive");
-            the_post_thumbnail('ab-medium',$attr);
-          }
-          ?>
-
-          <?php get_template_part('templates/components/loop/template','meta'); ?>
-
-
           <?php the_excerpt(); ?>
-
 
         </article>
 

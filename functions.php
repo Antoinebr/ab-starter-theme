@@ -113,3 +113,4 @@ include('includes/shortcode/sc_youtube.php');
 
 // Shortcode
 include('includes/hooks/abml_newsletter.php');
+include('includes/hooks/wp_core.php');

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container entry-content">
 
   <div class="row">
     <div class="col-sm-12">

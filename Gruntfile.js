@@ -55,10 +55,13 @@ module.exports = function(grunt){
           // Menu
           'js/parts/components/menu.js',
 
+          // Accordion
+          'js/parts/components/accordions/accordion.js', 
 
           // Plugins
           'js/parts/sliders.js',
           'js/parts/mansonry.js',
+          'js/parts/mp-gallery.js',
 
           // Themes
           'js/parts/header.js',

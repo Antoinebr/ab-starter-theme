@@ -1,5 +1,5 @@
 
-<div id="mansonry">
+<div class="mansonry" id="mansonry">
   <?php
   $slides = array(
     "http://lorempicsum.com/futurama/300/500/4",

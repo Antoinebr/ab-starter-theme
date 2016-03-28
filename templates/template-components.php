@@ -10,7 +10,7 @@
 
     <div class="col-md-12">
 
-      <h1> Components </h1> 
+      <h1> Components </h1>
 
 
 
@@ -141,11 +141,20 @@
   <p class="txtXL">Hello world , i'm a promo banner !</p>
 </section>
 
-</div> <!-- col-md-12 -->
 
 
-</div> <!-- row -->
+<div class="container">
+  <div class="row">
 
+    <div class="col-md-12">
+
+
+      <h3>Mansonry</h3>
+      <?php get_template_part('templates/components/gallery/template','mansonry'); ?>
+
+    </div> <!-- col-md-12 -->
+
+  </div> <!-- row -->
 
 </div> <!-- container -->
 

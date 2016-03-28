@@ -17,12 +17,13 @@
 
 var $container = $('#mansonry');
 var mansonryWidth = $('#mansonry').width();
-var nWitdth = mansonryWidth/3;
+var nWitdth = (mansonryWidth/3)-10;
 $('#mansonry .img-responsive').css('max-width',nWitdth+'px');
 $container.imagesLoaded( function() {
   $('#mansonry').masonry({
     columnWidth: nWitdth,
-    itemSelector: '.item'
+    itemSelector: '.item',
+    gutter: 5
   });
 });
 
