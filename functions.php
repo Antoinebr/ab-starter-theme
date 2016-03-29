@@ -88,6 +88,8 @@ include('includes/custom-admin/remove_admin_widgets.php');
 include('includes/custom-admin/tinymce.php');
 // Hide WYSWYG
 //include('includes/custom-admin/hide_editor.php');
+// Move Admin bar
+include('includes/custom-admin/move_admin_bar.php');
 
 
 

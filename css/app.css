@@ -2880,7 +2880,7 @@ table th[class*="col-"] {
 
 /* line 17, ../sass/components/menu/_menu-sticky.scss */
 .entry-content {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 @media only screen and (max-width: 768px) {

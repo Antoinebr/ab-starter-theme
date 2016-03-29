@@ -17,7 +17,8 @@ function formateDate(dateSTRING){
 /**
 *
 *  Retourne la date du Jour
-*  au format 20193012
+*  au format 20193012 (année mois jours)
+*
 */
 
 function abGetDate(){
@@ -80,8 +81,31 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 }
 
 
-$('.u-wjs').each(function(){
-  var elementheight = ($(this).data('wHeight'))/100;
-  var windowHeight = $(window).height();
-  $(this).css('height',(windowHeight*elementHeight)+'px');
+/**
+*
+*  Fixe une hauteur à un % de la fenêtre
+*  Et evite le sautillement sur mobile (retraction barre url)
+*  http://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
+*
+*
+*  Exemple :
+*
+*  <div class="u-wjs" data-height="90"></div>
+*
+*  Cette div aura une hauteur de 90% de la fenêtre
+*
+*/
+
+function abJsHeight(){
+  $('.u-wjs').each(function(){
+    var elementHeight = ($(this).data('height'))/100;
+    var windowHeight = $(window).height();
+    $(this).css('height',(windowHeight*elementHeight)+'px');
+  });
+}
+
+abJsHeight();
+
+$(window).resize(function(){
+  abJsHeight();
 });

@@ -13,3 +13,8 @@
 
 
 </html>
+<style>
+#wpadminbar{
+  top: 40px!important;
+}
+</style>
