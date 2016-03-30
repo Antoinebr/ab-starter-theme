@@ -23,6 +23,7 @@ module.exports = function(grunt){
     },
 
 
+
     /**
     *
     * Concatenne les js
@@ -56,7 +57,7 @@ module.exports = function(grunt){
           'js/parts/components/menu.js',
 
           // Accordion
-          'js/parts/components/accordions/accordion.js', 
+          'js/parts/components/accordions/accordion.js',
 
           // Plugins
           'js/parts/sliders.js',
@@ -125,6 +126,7 @@ module.exports = function(grunt){
   });
 
   grunt.loadNpmTasks('grunt-auto-install');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
