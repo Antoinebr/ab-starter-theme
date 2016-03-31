@@ -3,5 +3,5 @@
 <?php endif; ?>
 
 <?php $url = get_next_posts_page_link(); if($url !== "" && Helpers::others_page_exists()): ?>
-  <li><a href="<?=$url;?>">Suivant &rarr;</a></li>
+  <a href="<?=$url;?>">Suivant &rarr;</a>
 <?php endif; ?>

@@ -20,7 +20,7 @@
 <img class="responsive-icon" id="responsive-icon" src="<?php bloginfo('template_url');?>/img/icons/menu/icon-hamburger.svg">
 <img class="responsive-icon hidden" id="responsive-icon-close" src="<?php bloginfo('template_url');?>/img/icons/menu/icon-hamburger-close.svg">
 
-<div class="slide-menu menu--sticky ">
+<div class="slide-menu menu--sticky menu--ghost">
   <div class="container">
     <a href="<?php bloginfo('url');?>">
       <img class="menu-logo img-responsive" style="height:35px;" src="<?php echo get_theme_mod("ab_logo");?>">

@@ -7,21 +7,24 @@
 
       <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
+
         <h1><?php the_title(); ?></h1>
 
-
-        <?php the_content(); ?>
-
-
-      <?php endwhile; endif; ?>
+        <?php if ( has_post_thumbnail() ): $attr = array('class'	=> "img-responsive"); the_post_thumbnail('ab-medium',$attr); endif; ?>
 
 
-    </div> <!-- col-sm-12 -->
-  </div> <!-- row -->
+          <?php the_content(); ?>
+
+
+        <?php endwhile; endif; ?>
+
+
+      </div> <!-- col-sm-12 -->
+    </div> <!-- row -->
 
 
 
-</div> <!-- container -->
+  </div> <!-- container -->
 
 
-<?php get_footer(); ?>
+  <?php get_footer(); ?>

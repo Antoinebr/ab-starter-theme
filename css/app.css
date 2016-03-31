@@ -2829,8 +2829,13 @@ table th[class*="col-"] {
   padding-left: 0px;
 }
 
+/**
+*
+*  Responsive
+*
+*/
 @media only screen and (max-width: 768px) {
-  /* line 47, ../sass/components/menu/_menu.scss */
+  /* line 52, ../sass/components/menu/_menu.scss */
   .responsive-icon {
     display: block;
     position: absolute;
@@ -2841,7 +2846,7 @@ table th[class*="col-"] {
     cursor: pointer;
   }
 
-  /* line 58, ../sass/components/menu/_menu.scss */
+  /* line 63, ../sass/components/menu/_menu.scss */
   .menu-logo {
     position: absolute;
     top: 13px;
@@ -2851,11 +2856,11 @@ table th[class*="col-"] {
     z-index: 99;
   }
 
-  /* line 68, ../sass/components/menu/_menu.scss */
+  /* line 73, ../sass/components/menu/_menu.scss */
   .slide-menu {
     height: 58px;
   }
-  /* line 72, ../sass/components/menu/_menu.scss */
+  /* line 77, ../sass/components/menu/_menu.scss */
   .slide-menu nav {
     display: none;
     position: absolute;
@@ -2869,7 +2874,7 @@ table th[class*="col-"] {
     z-index: 1;
     padding-top: 100px;
   }
-  /* line 85, ../sass/components/menu/_menu.scss */
+  /* line 90, ../sass/components/menu/_menu.scss */
   .slide-menu nav ul li {
     margin-bottom: 20px;
     padding: 0;
@@ -2877,7 +2882,7 @@ table th[class*="col-"] {
     text-align: center;
   }
 
-  /* line 96, ../sass/components/menu/_menu.scss */
+  /* line 101, ../sass/components/menu/_menu.scss */
   .slide-menu .responsive-menu-show {
     display: block;
   }
@@ -2930,6 +2935,18 @@ table th[class*="col-"] {
     display: block;
   }
 }
+/**
+*
+*  Modyfier -- SHADOW MENU
+*
+*/
+/* line 7, ../sass/components/menu/_menu-ghost.scss */
+.menu--ghost {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 /* line 1, ../sass/components/gallery/_mansonry.scss */
 .mansonry .item {
   margin-bottom: 5px;
