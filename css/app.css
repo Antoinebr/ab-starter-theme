@@ -3348,7 +3348,7 @@ input[type="checkbox"] + label {
 /* line 5, ../sass/components/button/_button.scss */
 .button {
   position: relative;
-  display: inline-flex;
+  display: inline;
   align-items: center;
   margin: 0;
   padding: 0.75em 1.125em;
@@ -3368,46 +3368,22 @@ input[type="checkbox"] + label {
   user-select: none;
   -webkit-appearance: none;
 }
-/* line 27, ../sass/components/button/_button.scss */
-.button:hover, .button:focus {
-  color: #fff;
-  background: #207c9b;
-}
-/* line 32, ../sass/components/button/_button.scss */
-.button.is-active,
-.button .is-pressed {
-  background: #1c6a85;
-}
-/* line 37, ../sass/components/button/_button.scss */
-.button:disabled, .button.is-disabled {
-  cursor: default;
-  opacity: 0.45 !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  pointer-events: none;
-}
-@media (min-width: 30.0625em) {
-  /* line 46, ../sass/components/button/_button.scss */
-  .button + [class*=button] {
-    margin-left: 0.625rem;
-  }
-}
 
 /**
  * Modifier : Color
  * --------------------------------------- */
-/* line 58, ../sass/components/button/_button.scss */
+/* line 33, ../sass/components/button/_button.scss */
 .button--secondary {
   color: #333;
   background: #fff;
   box-shadow: inset 0 0 0 1px #ddd;
 }
-/* line 62, ../sass/components/button/_button.scss */
+/* line 37, ../sass/components/button/_button.scss */
 .button--secondary:hover, .button--secondary:focus {
   color: #333;
   background: #ddd;
 }
-/* line 66, ../sass/components/button/_button.scss */
+/* line 41, ../sass/components/button/_button.scss */
 .button--secondary.is-active,
 .button--secondary .is-pressed {
   color: #fff;
@@ -3415,11 +3391,11 @@ input[type="checkbox"] + label {
   box-shadow: none;
 }
 
-/* line 74, ../sass/components/button/_button.scss */
+/* line 49, ../sass/components/button/_button.scss */
 .button--danger {
   background-color: #D24A53;
 }
-/* line 76, ../sass/components/button/_button.scss */
+/* line 51, ../sass/components/button/_button.scss */
 .button--danger:hover, .button--danger:focus {
   background: #a83b42;
 }
@@ -3427,25 +3403,25 @@ input[type="checkbox"] + label {
 /**
  * Modifier : Size
  * --------------------------------------- */
-/* line 85, ../sass/components/button/_button.scss */
+/* line 60, ../sass/components/button/_button.scss */
 .button--small {
   padding: 0.5em 1.125em;
 }
 
-/* line 89, ../sass/components/button/_button.scss */
+/* line 64, ../sass/components/button/_button.scss */
 .button--big {
   padding: 1.25em 4em;
   font-size: 1.125em;
 }
 
-/* line 94, ../sass/components/button/_button.scss */
+/* line 69, ../sass/components/button/_button.scss */
 .button--block {
   display: block;
   width: 100%;
 }
 
 @media (max-width: 30.0625em) {
-  /* line 99, ../sass/components/button/_button.scss */
+  /* line 74, ../sass/components/button/_button.scss */
   .button--blockMobile {
     display: block;
     width: 100%;
@@ -3564,6 +3540,37 @@ input[type="checkbox"] + label {
 /* line 21, ../sass/components/button/_buttonGrouped.scss */
 .buttonGrouped .button + .button {
   margin-left: -1px;
+}
+
+/* line 1, ../sass/components/button/_buttonDblContent.scss */
+.button--dblcontent {
+  height: 40px;
+  overflow: hidden;
+  line-height: normal;
+  display: block;
+}
+/* line 8, ../sass/components/button/_buttonDblContent.scss */
+.button--dblcontent .initial, .button--dblcontent .hovered {
+  text-align: center;
+  display: block;
+  position: relative;
+  transition: 0.3s all;
+}
+/* line 14, ../sass/components/button/_buttonDblContent.scss */
+.button--dblcontent .initial {
+  top: 0px;
+}
+/* line 16, ../sass/components/button/_buttonDblContent.scss */
+.button--dblcontent .hovered {
+  bottom: -100px;
+}
+/* line 20, ../sass/components/button/_buttonDblContent.scss */
+.button--dblcontent:hover .initial {
+  top: -100px;
+}
+/* line 21, ../sass/components/button/_buttonDblContent.scss */
+.button--dblcontent:hover .hovered {
+  bottom: 14px;
 }
 
 /* line 1, ../sass/components/banner/_promo-banner.scss */

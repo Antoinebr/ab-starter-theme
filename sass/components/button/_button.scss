@@ -4,7 +4,7 @@
 
 .button {
   position: relative;
-  display: inline-flex; 
+  display: inline;
   align-items: center;
   margin: 0;
   padding: em(12) em(18);
@@ -23,31 +23,6 @@
   -webkit-user-drag: none;
   user-select: none;
   -webkit-appearance: none;
-
-  &:hover, &:focus {
-    color: $clr-light;
-    background: $clr-1-darken;
-  }
-
-  &.is-active,
-  .is-pressed {
-    background: shade($clr-1, 40%);
-  }
-
-  &:disabled,
-  &.is-disabled {
-    cursor: default;
-    opacity: .45!important;
-    background-image: none!important;
-    box-shadow: none!important;
-    pointer-events: none;
-  }
-
-  + [class*=button] {
-    @media (min-width: $mq-s-up) {
-      margin-left: rem(10);
-    }
-  }
 
 }
 

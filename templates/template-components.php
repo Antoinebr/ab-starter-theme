@@ -37,6 +37,15 @@
       <br/><br/>
       <a href="#" class="button button--circular "> I'm circular button </a>
 
+      <br/></br/>
+
+      <a href="#" class="button button--dblcontent">
+        <span class="initial"> I'm the first part</span>
+        <span class="hovered">  I'm the second  </span>
+      </a>
+
+
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         <a href="#" class="button button--blockMobile"> I'm a btn with a block display on mobile (768px) </a>

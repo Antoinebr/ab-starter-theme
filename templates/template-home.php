@@ -33,9 +33,12 @@
         <?php get_template_part('templates/components/gallery/template','mansonry'); ?>
 
 
+
+
         <hr class="u-mtm u-mbm" />
         <h3>Accordion</h3>
         <?php get_template_part('templates/components/accordion/template','accordion'); ?>
+
 
 
 
@@ -46,6 +49,7 @@
       <aside class="col-md-3">
 
         <?php get_template_part('templates/components/template','sidebar'); ?>
+
 
       </aside> <!-- col-md-3 -->
 

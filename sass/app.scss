@@ -34,7 +34,7 @@
 @import "components/videoWrapper";
 @import "components/archive/mini-archive";
 
-// Menu 
+// Menu
 @import "components/menu/_menu";
 @import "components/menu/menu-sticky";
 @import "components/menu/menu-ghost";
@@ -56,6 +56,7 @@
 @import "components/button/_buttonIcon";
 @import "components/button/_buttonCircular";
 @import "components/button/_buttonGrouped";
+@import "components/button/_buttonDblContent.scss"; 
 
 // Banner
 @import "components/banner/promo-banner";
