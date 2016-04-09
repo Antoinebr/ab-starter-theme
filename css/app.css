@@ -2505,10 +2505,15 @@ table th[class*="col-"] {
 }
 
 /** ======================================
- * Component : Typography
- * ======================================= */
-/* line 5, ../sass/components/_typo.scss */
-.txtXXL {
+* Component : Typography
+* ======================================= */
+/**
+*
+*  Headings
+*
+*/
+/* line 11, ../sass/components/_typo.scss */
+.h1 {
   margin: 0 0 1.625rem 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.25em;
@@ -2518,12 +2523,12 @@ table th[class*="col-"] {
   font-size: 2.5em;
 }
 /* line 8, ../sass/tools/_mixins.scss */
-.txtXXL:first-child {
+.h1:first-child {
   margin-top: 0;
 }
 
-/* line 9, ../sass/components/_typo.scss */
-.txtXL {
+/* line 15, ../sass/components/_typo.scss */
+.h2 {
   margin: 0 0 1.625rem 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.25em;
@@ -2533,12 +2538,12 @@ table th[class*="col-"] {
   font-size: 1.75em;
 }
 /* line 8, ../sass/tools/_mixins.scss */
-.txtXL:first-child {
+.h2:first-child {
   margin-top: 0;
 }
 
-/* line 13, ../sass/components/_typo.scss */
-.txtL {
+/* line 19, ../sass/components/_typo.scss */
+.h3 {
   margin: 0 0 1.625rem 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.25em;
@@ -2548,12 +2553,12 @@ table th[class*="col-"] {
   font-size: 1.25em;
 }
 /* line 8, ../sass/tools/_mixins.scss */
-.txtL:first-child {
+.h3:first-child {
   margin-top: 0;
 }
 
-/* line 17, ../sass/components/_typo.scss */
-.txtM {
+/* line 23, ../sass/components/_typo.scss */
+.h4 {
   margin: 0 0 1.625rem 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.25em;
@@ -2563,48 +2568,83 @@ table th[class*="col-"] {
   font-size: 1.125em;
 }
 /* line 8, ../sass/tools/_mixins.scss */
-.txtM:first-child {
+.h4:first-child {
   margin-top: 0;
 }
 
-/* line 21, ../sass/components/_typo.scss */
+/* line 27, ../sass/components/_typo.scss */
+.h5 {
+  margin: 0 0 1.625rem 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.25em;
+  font-weight: bold;
+  color: #23292e;
+  text-rendering: optimizeLegibility;
+  font-size: 0.875em;
+}
+/* line 8, ../sass/tools/_mixins.scss */
+.h5:first-child {
+  margin-top: 0;
+}
+
+/* line 31, ../sass/components/_typo.scss */
+.h6 {
+  margin: 0 0 1.625rem 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.25em;
+  font-weight: bold;
+  color: #23292e;
+  text-rendering: optimizeLegibility;
+  font-size: 0.875em;
+}
+/* line 8, ../sass/tools/_mixins.scss */
+.h6:first-child {
+  margin-top: 0;
+}
+
+/**
+*
+*  TXT
+*
+*/
+/* line 41, ../sass/components/_typo.scss */
+.txtXXL {
+  font-size: 2.5em;
+}
+
+/* line 44, ../sass/components/_typo.scss */
+.txtXL {
+  font-size: 1.75em;
+}
+
+/* line 47, ../sass/components/_typo.scss */
+.txtL {
+  font-size: 1.25em;
+}
+
+/* line 51, ../sass/components/_typo.scss */
+.txtM {
+  font-size: 1.125em;
+}
+
+/* line 55, ../sass/components/_typo.scss */
 .txtS {
-  margin: 0 0 1.625rem 0;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1.25em;
-  font-weight: bold;
-  color: #23292e;
-  text-rendering: optimizeLegibility;
   font-size: 0.875em;
 }
-/* line 8, ../sass/tools/_mixins.scss */
-.txtS:first-child {
-  margin-top: 0;
-}
 
-/* line 25, ../sass/components/_typo.scss */
+/* line 59, ../sass/components/_typo.scss */
 .txtXS {
-  margin: 0 0 1.625rem 0;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1.25em;
-  font-weight: bold;
-  color: #23292e;
-  text-rendering: optimizeLegibility;
   font-size: 0.875em;
 }
-/* line 8, ../sass/tools/_mixins.scss */
-.txtXS:first-child {
-  margin-top: 0;
-}
 
-/* line 30, ../sass/components/_typo.scss */
+/* line 63, ../sass/components/_typo.scss */
 .txtLead {
   font-weight: bold;
   font-size: 1.25em;
   color: #212121;
 }
 
-/* line 36, ../sass/components/_typo.scss */
+/* line 69, ../sass/components/_typo.scss */
 .txtSmall {
   font-size: 0.75rem;
   line-height: 1.25em;

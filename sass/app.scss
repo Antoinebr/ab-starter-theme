@@ -56,7 +56,7 @@
 @import "components/button/_buttonIcon";
 @import "components/button/_buttonCircular";
 @import "components/button/_buttonGrouped";
-@import "components/button/_buttonDblContent.scss"; 
+@import "components/button/_buttonDblContent.scss";
 
 // Banner
 @import "components/banner/promo-banner";
@@ -67,7 +67,7 @@
 // ===================================================
 
 // @import "utils/_u-layout";
-// @import "utils/_u-show-hide";
+@import "utils/_u-show-hide";
 @import "utils/spacing";
 @import "utils/text";
 
