@@ -74,3 +74,13 @@ $.extend(true, $.magnificPopup.defaults, {
     tError: '<a href="%url%">Le contenu</a>n\'a pas pu $etre chargé.' // Error message when ajax request failed
   }
 });
+
+
+/**
+*
+*  Permet de rendre certaines images du WYSWYG responsive
+*
+*/
+$('[class^="wp-image"]').each(function(){
+  $(this).addClass('img-responsive');
+});
