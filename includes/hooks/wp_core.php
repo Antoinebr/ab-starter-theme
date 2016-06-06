@@ -33,3 +33,19 @@ function wpdocs_my_search_form( $form ) {
   return $form;
 }
 add_filter( 'get_search_form', 'wpdocs_my_search_form' );
+
+
+
+/**
+*
+* Ajout la classe img-responsive à chaque image du content WYSWYG
+*
+*/
+function add_image_responsive_class($content) {
+	global $post;
+	$pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
+	$replacement = '<img$1class="$2 img-responsive"$3>';
+	$content = preg_replace($pattern, $replacement, $content);
+	return $content;
+}
+add_filter('the_content', 'add_image_responsive_class');
