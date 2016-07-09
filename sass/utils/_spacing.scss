@@ -34,6 +34,7 @@
 .u-mrm { margin-right: $spacer-m !important }
 .u-mrl { margin-right: $spacer-l !important }
 
+
 /*
 * Padding
 */
@@ -55,3 +56,53 @@
 .u-prs { padding-right: $spacer-s !important }
 .u-prm { padding-right: $spacer-m !important }
 .u-prl { padding-right: $spacer-l !important }
+
+
+.u-pl10{ padding-left: 10%;}
+.u-pr10{padding-right: 10%;}
+.u-pl05{padding-left: 5%;}
+.u-pr05{padding-right: 5%;}
+
+
+/*
+* Line Height
+*/
+.u-lhs{line-height: $spacer-s!important;}
+.u-lhm{line-height: $spacer-m!important;}
+
+
+/*
+*  Responsive spacing
+*/
+@media only screen and (max-width: 768px){
+
+  // Margin
+  .u-sm-mtm { margin-top: $spacer-m !important }
+  .u-sm-mbm { margin-bottom: $spacer-m !important }
+  .u-sm-mts { margin-top: $spacer-s !important }
+  .u-sm-mbs { margin-bottom: $spacer-s !important }
+
+  .u-sm-mtn { margin-top: 0px!important }
+  .u-sm-mbn { margin-bottom: 0px!important }
+
+  // Padding
+  .u-sm-ptm { padding-top: $spacer-m !important }
+  .u-sm-pbm { padding-bottom: $spacer-m !important }
+  .u-sm-plm { padding-left: $spacer-m !important }
+  .u-sm-prm { padding-right: $spacer-m !important }
+
+  .u-sm-pts { padding-top: $spacer-s !important }
+  .u-sm-pbs { padding-bottom: $spacer-s !important }
+  .u-sm-pls { padding-left: $spacer-s !important }
+  .u-sm-prs { padding-right: $spacer-s !important }
+
+}
+
+
+/*
+* HR
+*/
+
+hr {border-color: rgba(224, 224, 224, 0.19);}
+
+.hr--50{width: 50%;}

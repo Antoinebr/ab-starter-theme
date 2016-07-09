@@ -3,7 +3,7 @@
 <div class="container entry-content">
 
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-9">
 
       <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
@@ -29,11 +29,18 @@
         </article>
 
       <?php endwhile;  ?>
-      <?php get_template_part('templates/components/template','pagination'); ?>
+      <?php get_template_part('templates/components/pagination/template','pagination'); ?>
     <?php  endif; ?>
 
 
-  </div> <!-- col-sm-12 -->
+  </div> <!-- col-sm-9 -->
+
+  <div class="col-sm-3">
+    <?php get_template_part('templates/components/template','sidebar'); ?>
+  </div> <!-- col-sm-4 -->
+
+
+
 </div> <!-- row -->
 
 

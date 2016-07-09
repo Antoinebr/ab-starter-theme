@@ -1,27 +1,21 @@
+$('.faq-question').click(function(){
+  console.log($(this).closest('.faq'));
+  $(this).find('img').toggleClass('up');
+  $(this).closest('.faq').find('.faq-awnser').slideToggle();
+});
 
-// Montre le bouton en savoir plus uniquement si il y'a un contenu caché dans l'article
-function seekAndShowBtn(ctaClass){
-  var $popi = $(ctaClass).parent().find('.more-content');
-  $popi.each(function(){
-    $popi.closest('article').find(ctaClass).removeClass('hidden');
+
+if(window.location.href.indexOf("questions/#") > -1) {
+
+  var hash = window.location.href.split('#');
+  var hasho = '#'+hash[1];
+  $(hasho).find('.faq-show-more').trigger('click');
+  $('html, body').animate({
+    scrollTop: $(hasho).offset().top-60
+  }, 800, function(){
+
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+
   });
 }
-// seekAndShowBtn('.show-cta-savoir-plus');
-
-
-
-var arrowDown = "<img src=' "+abTemplateUrl+"/img/icons/small-arrow-white.png'>";
-var arrowUp = "<img src=' "+abTemplateUrl+"/img/icons/small-arrow-white-up.png'>";
-
-$('.show-cta-savoir-plus').click(function(){
-  var $hidenContent = $(this).parent().find('.more-content');
-  $hidenContent.slideToggle().toggleClass('showed');
-
-  if($hidenContent.hasClass('showed')){
-    $(this).text('').text('Réduire');
-    $(this).append(arrowUp);
-  }else{
-    $(this).text('').text('En savoir plus');
-    $(this).append(arrowDown);
-  }
-});

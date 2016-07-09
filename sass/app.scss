@@ -50,6 +50,7 @@
 @import "components/form/_formInputState";
 @import "components/form/_formInputToggle";
 @import "components/form/formInline";
+@import "components/form/_ghostinput.scss";
 
 // Button
 @import "components/button/_button";
@@ -57,10 +58,23 @@
 @import "components/button/_buttonCircular";
 @import "components/button/_buttonGrouped";
 @import "components/button/_buttonDblContent.scss";
+@import "components/_pagination.scss";
+
 
 // Banner
 @import "components/banner/promo-banner";
 @import "components/banner/full-screen";
+@import "components/banner/_infobar.scss";
+
+// FAQ
+@import "components/faq/faq";
+
+// Portfolio
+@import "components/portfolio/_portfolio.scss";
+
+// Pagination
+@import "components/_pagination.scss";
+
 
 // ===================================================
 // Utils

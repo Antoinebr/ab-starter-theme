@@ -31,6 +31,7 @@ include('includes/utils/helper.class.php');
 //include('includes/utils/extend-search.php');
 // Extend search
 //include('includes/utils/jetpack/jp_deregister_scripts.php');
+include('includes/utils/pagination/pagination.php');
 
 
 /*
@@ -69,6 +70,7 @@ include('includes/ajax/form_contact.php');
 *
 */
 include('includes/widgets/widget_about.php');
+include('includes/widgets/widget_form.php');
 
 
 
@@ -79,7 +81,8 @@ include('includes/widgets/widget_about.php');
 */
 
 // Customizer et champs perso Customs
-include('includes/custom-admin/customizer.php');
+include('includes/custom-admin/customizer/customizer.php');
+include('includes/custom-admin/customizer/customizer_footer.php');
 // removes admin menus
 include('includes/custom-admin/remove_admin_menus.php');
 // removes admin widgets

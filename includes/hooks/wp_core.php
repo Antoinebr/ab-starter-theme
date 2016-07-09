@@ -49,3 +49,11 @@ function add_image_responsive_class($content) {
 	return $content;
 }
 add_filter('the_content', 'add_image_responsive_class');
+
+
+/**
+*
+*	EMPÊCHER LES ACCENTS DANS LES URLS LORS DE L’UPLOAD D’UN MÉDIA
+*
+*/
+add_filter('sanitize_file_name', 'remove_accents' );

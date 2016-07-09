@@ -115,8 +115,8 @@ module.exports = function(grunt){
     */
     watch: {
       scripts: {
-        files: ['js/parts/*.js','js/parts/*/*.js'],
-        tasks: ['concat'],
+        files: ['js/parts/*.js','js/parts/*/*.js','js/parts/*/*/*.js'],
+        tasks: ['concat'], 
         options: {
           spawn: false,
         },
