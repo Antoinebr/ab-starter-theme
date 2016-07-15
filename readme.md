@@ -13,6 +13,7 @@ Work In progress...
 
 ```
 npm install grunt --save-dev
+npm init
 sudo npm install grunt-auto-install --save-dev
 
 grunt auto_install
