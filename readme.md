@@ -19,3 +19,7 @@ sudo npm install grunt-auto-install --save-dev
 grunt auto_install
 
 ```
+
+## Speed Up
+
+* htacess speed-up https://gist.github.com/Antoinebr/fe1e43abe41fcab865a7cb65e850ad6d
